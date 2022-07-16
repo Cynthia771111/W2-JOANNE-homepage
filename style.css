@@ -1,0 +1,329 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ----------- img 隨螢幕寬度自動調整比例 ------------ */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------- 全域 border box ------------ */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ----------- image has no padding-bottom ------------ */
+img {
+  vertical-align: top;
+}
+
+/* ----------- code ------------ */
+body {
+  font-family: Roboto;
+}
+
+body h1 {
+  font-size: 80px;
+  line-height: 106px;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+
+body h2 {
+  font-size: 64px;
+  line-height: 84px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+body p {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+.hero {
+  background-image: url("image/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-content {
+  margin-top: 340px;
+  margin-bottom: 308px;
+}
+
+.hero p {
+  color: #fff;
+  font-style: italic;
+}
+
+.hero .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 28px;
+}
+
+.about h2 {
+  margin-bottom: 40px;
+}
+
+.about img {
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-style: italic;
+}
+
+.about .self-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #000;
+}
+
+.about .experience {
+  line-height: 42px;
+  margin-top: 28px;
+}
+
+.about .experience .exper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 28px;
+}
+
+.about .experience .dot {
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.brand {
+  background: #000000;
+  padding-top: 56px;
+  padding-bottom: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand h2 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.brand p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.brand .slogan {
+  padding-bottom: 32px;
+}
+
+.brand .text {
+  font-size: 20px;
+}
+
+.brand .brand-1 {
+  width: 50%;
+  margin-top: 68px;
+  margin-bottom: 40px;
+}
+
+.brand .brand-small-images {
+  margin-right: -24px;
+  text-align: center;
+}
+
+.brand .brand-2 .brand-3 {
+  margin-right: 24px;
+  width: 50%;
+}
+
+.other-works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.other-works .text {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.other-works .works {
+  margin-top: 56px;
+}
+
+.other-works .v-lg-images, .other-works .h-lg-images, .other-works .h-sm-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -24px;
+  margin-bottom: 48px;
+}
+
+.other-works .v-lg-image, .other-works .h-lg-image, .other-works .h-sm-image {
+  margin-right: 24px;
+}
+
+.other-works .image-text {
+  font-size: 20px;
+  line-height: 42px;
+  font-weight: 500;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.contact {
+  background: #000;
+  color: #fff;
+  padding: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact p {
+  padding-bottom: 16px;
+  font-weight: 500;
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */
