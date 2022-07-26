@@ -61,7 +61,7 @@ img {
 
 /* ----------- 全域 border box ------------ */
 
-*,*:before,*:after{
+*,*::before,*::after{
 	box-sizing: border-box;
 }
 
@@ -114,10 +114,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    .hero-content {
-        margin-top: 340px;
-        margin-bottom: 308px;
-    }
+    height: 100vh;
     p {
         color: #fff;
         font-style: italic;
@@ -141,8 +138,11 @@ body {
     img {
         margin-bottom: 20px;
     }
-    p {
+    .per-info {
         font-style: italic;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
     }
     .self-intro {
         display: flex;
@@ -160,13 +160,14 @@ body {
             align-items: center;
             justify-content: center;
             margin-bottom: 28px;
-        }
-        .dot {
-            width: 22px;
-            height: 22px;
-            background: #891818;
-            border-radius: 100%;
-            margin-right: 16px;
+            &::before {
+                content: "";
+                width: 22px;
+                height: 22px;
+                background: #891818;
+                margin-right: 16px;
+                border-radius: 100%;
+            }
         }
     }
 
@@ -194,19 +195,24 @@ body {
     .text {
         font-size: 20px;
     }
-    .brand-1 {
-        width: 50%;
+    .brand-photo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: -24px;
+    }
+    .bg-photo {
+        width: 80%;
         margin-top: 68px;
         margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
     }
-    .brand-small-images {
-        margin-right: -24px;
-        text-align: center;
-        
-    }
-    .brand-2, .brand-3{
-        margin-right: 24px;
+    .md-photo {
         width: 40%;
+        display: flex;
+        justify-content: center;
+        margin-right: 24px;
     }
 }
 
@@ -244,12 +250,16 @@ body {
     background: #000;
     color: #fff;
     padding: 64px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p {
-        padding-bottom: 16px;
+    text-align: center;
+    .per-content-method,a {
+        color: #fff;
+        font-size: 24px;
+        line-height: 36px;
         font-weight: 500;
         font-style: italic;
+        padding-bottom: 16px;
+        &:hover {
+            color: #dddddd;
+        }
     }
 }

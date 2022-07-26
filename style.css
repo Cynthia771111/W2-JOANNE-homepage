@@ -65,7 +65,7 @@ img {
 }
 
 /* ----------- 全域 border box ------------ */
-*, *:before, *:after {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -124,11 +124,7 @@ body p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.hero .hero-content {
-  margin-top: 340px;
-  margin-bottom: 308px;
+  height: 100vh;
 }
 
 .hero p {
@@ -168,8 +164,11 @@ body p {
   margin-bottom: 20px;
 }
 
-.about p {
+.about .per-info {
   font-style: italic;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .about .self-intro {
@@ -205,12 +204,13 @@ body p {
   margin-bottom: 28px;
 }
 
-.about .experience .dot {
+.about .experience .exper::before {
+  content: "";
   width: 22px;
   height: 22px;
   background: #891818;
-  border-radius: 100%;
   margin-right: 16px;
+  border-radius: 100%;
 }
 
 .brand {
@@ -247,20 +247,39 @@ body p {
   font-size: 20px;
 }
 
-.brand .brand-1 {
-  width: 50%;
+.brand .brand-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -24px;
+}
+
+.brand .bg-photo {
+  width: 80%;
   margin-top: 68px;
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.brand .brand-small-images {
-  margin-right: -24px;
-  text-align: center;
-}
-
-.brand .brand-2, .brand .brand-3 {
-  margin-right: 24px;
+.brand .md-photo {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 24px;
 }
 
 .other-works {
@@ -310,21 +329,19 @@ body p {
   background: #000;
   color: #fff;
   padding: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
-.contact p {
-  padding-bottom: 16px;
+.contact .per-content-method, .contact a {
+  color: #fff;
+  font-size: 24px;
+  line-height: 36px;
   font-weight: 500;
   font-style: italic;
+  padding-bottom: 16px;
+}
+
+.contact .per-content-method:hover, .contact a:hover {
+  color: #dddddd;
 }
 /*# sourceMappingURL=style.css.map */
